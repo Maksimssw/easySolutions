@@ -1,11 +1,21 @@
 @import './mixin';
 @import './variable';
 
-text{
+.text{
     &_heading{
         @include font($grey, 400, 16px, 25px);
     }
     &_main{
         @include font($main, 500, 16px, 19.5px);
+    }
+}
+
+.title{
+    @include font($main, 800, 48px, 64.36px);
+    &_section{
+        @include font($dark, 700, 36px, 52.66px);
+    }
+    &_heading{
+        @include font(#000, 600, 18px, 21.94px);
     }
 }
