@@ -1,0 +1,27 @@
+@import './base/text';
+@import './base/button';
+
+.container{
+    padding: 0 calc(50% - 555px);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img,a,button{
+    display: block;
+}
+
+body{
+    font-family: 'Montserrat' sans-serif;
+}
+
+.main{
+    min-height: 900px;
+    background: url('../img/Main/main_bg.jpg') no-repeat center /cover;
+}
+
+@import './modules/header';

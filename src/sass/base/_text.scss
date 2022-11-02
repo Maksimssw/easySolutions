@@ -1,0 +1,11 @@
+@import './mixin';
+@import './variable';
+
+text{
+    &_heading{
+        @include font($grey, 400, 16px, 25px);
+    }
+    &_main{
+        @include font($main, 500, 16px, 19.5px);
+    }
+}
