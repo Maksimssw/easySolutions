@@ -44,3 +44,64 @@
         }
     }
 }
+
+.hamburger{
+    width: 45px;
+    height: 40px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    li{
+        transition: 0.4s all ease-in-out;
+        background: $main;
+        height: 2px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.hamburger.active{
+    li{
+        &:nth-child(1){
+            transform: translateY(9px) rotate(45deg);
+        }
+        &:nth-child(2){
+            opacity: 0;
+            visibility: hidden;
+        }
+        &:nth-child(3){
+            transform: translateY(-9px) rotate(-45deg);
+        }
+    }
+}
+
+.column-menu{
+    position: fixed;
+    top: 0;
+    left: -10%;
+    padding: 20px;
+    background: $dark;
+    opacity: 0;
+    height: 100vh;
+    z-index: 100;
+    width: 60%;
+    visibility: hidden;
+    transition: 0.4s all ease-in-out;
+    .menu{
+        height: 100%;
+        justify-content: space-around;
+        padding-right: 0;
+        flex-direction: column;
+        &__list{
+            margin-right: 0;
+        }
+    }
+}
+
+.column-menu.active{
+    left: 0%;
+    opacity: 0.9;
+    background: $dark;
+    visibility: visible;
+}
