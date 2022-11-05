@@ -2,14 +2,16 @@
 @import './variable';
 
 .text{
-    &_heading{
-        @include font(var(--grey), 400, 16px, 25px);
-    }
+    @include font(var(--grey), 400, 16px, 25px);
     &_main{
         @include font(var(--main), 500, 16px, 19.5px);
     }
+    &-link{
+        text-decoration: underline;
+        @include font(var(--blue), 500, 16px, 20px);
+    }
 }
-
+    
 .title{
     @include font(var(--main), 800, 48px, 64.36px);
     &_section{
