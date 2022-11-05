@@ -28,11 +28,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.main{
-    min-height: 900px;
-    background: url('../img/Main/main_bg.webp') no-repeat center /cover;
-}
-
 @import './modules/header';
 @import './modules/intro';
 @import './modules/applications';

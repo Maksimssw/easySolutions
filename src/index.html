@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Style -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,86 +16,78 @@
     <title>Мы создаем легкие решения  сложных задач и проблем</title>
 </head>
 <body>
+    <header class="header">
+        <nav class="header__wrapper container">
+            <ul class="menu">
+                <li class="menu__list">
+                    <a href="#" class="menu__link text_main">Главная</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link text_main">Наши проекты</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link text_main">Услуги</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link text_main">Новости</a>
+                </li>
+                <li class="menu__list">
+                    <a href="#" class="menu__link text_main">Контакты</a>
+                </li>
+            </ul>
+            <a href="#" class="menu-button">
+                <span></span>
+            </a>
+        </nav>
+    </header>
     <main class="main">
-        <header class="header">
-            <div class="container">
-                <nav class="header__wrapper">
-                    <ul class="menu">
-                        <li class="menu__list">
-                            <a href="#" class="menu__link text_main">Главная</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="#" class="menu__link text_main">Наши проекты</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="#" class="menu__link text_main">Услуги</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="#" class="menu__link text_main">Новости</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="#" class="menu__link text_main">Контакты</a>
-                        </li>
-                    </ul>
-                    <ul class="hamburger">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <nav class="column-menu"></nav>
-        <section class="intro">
-            <div class="container">
-                <p class="intro__atelier text_main">Передовая IT студия</p>
-                <h1 class="intro__title title">Мы создаем легкие решения  сложных задач и проблем</h1>
-                <button class="intro__btn btn text_main">Наши проекты</button>
-            </div>
+        <section class="intro container">
+            <h1 class="intro__title title">
+                <span class="intro__atelier text_main">Передовая IT студия</span>
+                Мы создаем легкие решения  сложных задач и проблем</h1>
+            <a href="#" class="intro__button button">Наши проекты</a>
         </section>
-    </main>
-    <section class="applications">
-        <div class="container">
-            <h2 class="applications__title title_section">Мы создаем мобильные приложения для крупных корпораций</h2>
-            <p class="applications__subtitle text_heading">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-            <ul class="applications__wrapper">
-                <li class="applications__list">
+        <section class="applications container">
+            <h2 class="applications__title title title_section">Мы создаем мобильные приложения для крупных корпораций</h2>
+            <p class="applications__describe text text_heading">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+            <ul class="applications__list">
+                <li class="applications__item">
                     <div class="applications__circle">
                         <div class="applications__photo">
                             <img src="img/Applications/project.svg" alt="project">
                         </div>
                     </div>
                     <div class="applications__text">
-                        <h3 class="applications__heading title_heading">Создание сайтов</h3>
+                        <h3 class="applications__heading title title_heading">Создание сайтов</h3>
                         <p class="applications__description">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
                     </div>
                 </li>
-                <li class="applications__list">
+                <li class="applications__item">
                     <div class="applications__circle">
                         <div class="applications__photo">
                             <img src="img/Applications/project.svg" alt="project">
                         </div>
                     </div>
                     <div class="applications__text">
-                        <h3 class="applications__heading title_heading">Создание сайтов</h3>
+                        <h3 class="applications__heading title title_heading">Создание сайтов</h3>
                         <p class="applications__description">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
                     </div>
                 </li>
-                <li class="applications__list">
+                <li class="applications__item">
                     <div class="applications__circle">
                         <div class="applications__photo">
                             <img src="img/Applications/project.svg" alt="project">
                         </div>
                     </div>
                     <div class="applications__text">
-                        <h3 class="applications__heading title_heading">Создание сайтов</h3>
+                        <h3 class="applications__heading title title_heading">Создание сайтов</h3>
                         <p class="applications__description">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
                     </div>
                 </li>
             </ul>
-            <button class="applications__btn btn text_main">Все услуги</button>
-        </div>
-    </section>
+            <a href="#" class="applications__button button">Все услуги</a>
+        </section>
+    </main>
 <script src="js/bundle.js"></script>
 </body>
 </html>

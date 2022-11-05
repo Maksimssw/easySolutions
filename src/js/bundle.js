@@ -13,17 +13,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function hamburger(){
-    const menu = document.querySelector('.menu').cloneNode(1),
-          hamburger = document.querySelector('.hamburger'),
-          columnMenu = document.querySelector('.column-menu');
-
-    // Adding a menu to a column
-    columnMenu.appendChild(menu);
+    const menu = document.querySelector('.menu'),
+          hamburger = document.querySelector('.menu-button');
 
     // When the function is activated, the menu either opens or closes
     function toggleMenu (){
         hamburger.classList.toggle('active');
-        columnMenu.classList.toggle('active');
+        menu.classList.toggle('active');
     }
 
     // When you click on the hamburger, activation of the functions 
