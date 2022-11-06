@@ -1,10 +1,8 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync');
 const sass        = require('gulp-sass')(require('sass'));
-const cleanCSS = require('gulp-clean-css');
-const rename = require("gulp-rename");
 const htmlmin = require('gulp-htmlmin');
- 
+
 gulp.task('minify', () => {
   return gulp.src('src/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -22,6 +20,7 @@ gulp.task('server', function() {
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
+
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
@@ -33,4 +32,4 @@ gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
 })
 
-gulp.task('default', gulp.parallel('watch', 'minify', 'server', 'styles'));
+gulp.task('default', gulp.parallel('watch', 'minify', 'server', 'styles', 'js'));
