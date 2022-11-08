@@ -1,6 +1,6 @@
-function hamburger(){
-    const menu = document.querySelector('.menu'),
-          hamburger = document.querySelector('.menu-button');
+document.addEventListener('DOMContentLoaded', function(){
+    const menu = document.querySelector('.navigation__list'),
+          hamburger = document.querySelector('.navigation-button');
 
     // When the function is activated, the menu either opens or closes
     function toggleMenu (){
@@ -13,6 +13,4 @@ function hamburger(){
     hamburger.addEventListener('click', () => {
         toggleMenu();
     });
-}
-
-export default hamburger;
+});

@@ -4,9 +4,12 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.20.2",
     "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^8.0.0",
@@ -15,10 +18,17 @@
     "i": "^0.3.7",
     "lighthouse": "^9.6.8",
     "npm": "^8.19.3",
-    "sass": "^1.51.0"
+    "sass": "^1.51.0",
+    "webpack": "^5.74.0",
+    "webpack-stream": "^7.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   },
   "repository": {
     "type": "git",
@@ -29,5 +39,11 @@
   "bugs": {
     "url": "https://github.com/Maksimssw/easySolutions/issues"
   },
-  "homepage": "https://github.com/Maksimssw/easySolutions#readme"
+  "homepage": "https://github.com/Maksimssw/easySolutions#readme",
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "del": "^6.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1"
+  }
 }
