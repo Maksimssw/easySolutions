@@ -1,22 +1,20 @@
-const gulp = require("gulp");
+import gulp from "gulp";
 
 /* Configuration */
-const path = require("../config/path.js");
-const app = require("../config/app.js");
+import path from "../config/path.js";
+import app from "../config/app.js";
 
 
 /* Plugins */
-const plumber = require("gulp-plumber")
-const babel = require("gulp-babel")
-const webpack = require("webpack-stream")
+import plumber from "gulp-plumber"
+import babel from "gulp-babel"
+import webpack from "webpack-stream"
 
 /* Processing JavaScript */
-const js = () => {
+export default () => {
     return gulp.src(path.js.src)
         .pipe(plumber(app.plumberJS))
         .pipe(babel())
         .pipe(webpack({mode: "development"}))
         .pipe(gulp.dest(path.js.dest));
 }
-
-module.exports = js;

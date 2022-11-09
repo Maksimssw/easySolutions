@@ -1,19 +1,17 @@
-const gulp = require("gulp");
+import gulp from "gulp";
 
 /* Configuration */
-const path = require("../config/path.js");
-const app = require("../config/app.js");
+import path from "../config/path.js";
+import app from "../config/app.js";
 
 /* Plugins */
-const plumber = require("gulp-plumber")
-const webpHtml = require("gulp-webp-html")
+import plumber from "gulp-plumber"
+import webpHtml from "gulp-webp-html"
 
 /* Processing HTML */
-const html = () => {
+export default () => {
     return gulp.src(path.html.src)
         .pipe(plumber(app.plumber))
         .pipe(webpHtml())
         .pipe(gulp.dest(path.html.dest));
 }
-
-module.exports = html;

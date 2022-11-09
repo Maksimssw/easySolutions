@@ -1,7 +1,7 @@
 const pathSrc = "./src"; 
 const pathDest = "./dist";
 
-module.exports = {
+export default {
     root: pathDest,
     src: pathSrc,
 

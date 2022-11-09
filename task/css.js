@@ -1,19 +1,17 @@
-const gulp = require("gulp");
+import gulp from "gulp";
 
 /* Plugins */
-const plumber = require("gulp-plumber")
-const webpCss = require("gulp-webp-css")
+import plumber from "gulp-plumber"
+import webpCss from "gulp-webp-css"
 
 /* Configuration */
-const path = require("../config/path.js");
-const app = require("../config/app.js");
+import path from "../config/path.js";
+import app from "../config/app.js";
 
 /* CSS Processing */
-const css = () => {
+export default  () => {
     return gulp.src(path.css.src)
         .pipe(plumber(app.plumberCss))
         .pipe(webpCss())
         .pipe(gulp.dest(path.css.dest));
 }
-
-module.exports = css;

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "type": "module",
   "dependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.20.2",

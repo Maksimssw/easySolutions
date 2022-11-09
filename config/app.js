@@ -1,7 +1,7 @@
 /* Plugins */
-const notify = require("gulp-notify")
+import notify from "gulp-notify";
 
-module.exports = {
+export default {
     plumberHTML: {
         errorHandler: notify.onError(error => ({
             title: "HTML",

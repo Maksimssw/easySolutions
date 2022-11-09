@@ -1,18 +1,18 @@
-const gulp = require("gulp");
+import gulp from "gulp";
 
 /* Configuration */
-const path = require("../config/path.js");
-const app = require("../config/app.js");
+import path from "../config/path.js";
+import app from "../config/app.js";
 
 
 /* Plugins */
-const plumber = require("gulp-plumber")
-const imagemin = require("gulp-imagemin")
-const newer = require("gulp-newer")
-const webp = require("gulp-webp")
+import plumber from "gulp-plumber"
+import imagemin from "gulp-imagemin"
+import newer from "gulp-newer"
+import webp from "gulp-webp"
 
 /* Processing Images */
-const img = () => {
+export default () => {
     return gulp.src(path.img.src)
         .pipe(plumber(app.plumberIMG))
         .pipe(newer(path.img.dest))
@@ -23,5 +23,3 @@ const img = () => {
         .pipe(imagemin(app.imagemin))
         .pipe(gulp.dest(path.img.dest));
 }
-
-module.exports = img;

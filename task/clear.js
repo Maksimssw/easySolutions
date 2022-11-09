@@ -1,13 +1,12 @@
 /* Plugins */
-const del = require("del")
+import del from "del";
 
 /* Configuration */
-const path = require("../config/path.js");
+import path from "../config/path.js";
 
 
 /* Deleting directories */
-const clear = () => {
+export default () => {
     return del(path.root);
 }
  
-module.exports = clear;

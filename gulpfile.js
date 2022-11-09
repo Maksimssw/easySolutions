@@ -1,17 +1,16 @@
-const gulp = require("gulp");
-const browserSync = require("browser-sync").create();
+import gulp from"gulp";
+import browserSync from"browser-sync";
 
 /* Configuration */
-const path = require("./config/path.js");
-
+import path from"./config/path.js";
 
 /* Tasks */
-const clear = require('./task/clear.js');
-const html = require('./task/html.js');
-const css = require('./task/css.js');
-const js = require('./task/js.js');
-const img = require('./task/img');
-const font = require('./task/font');
+import clear from'./task/clear.js';
+import html from'./task/html.js';
+import css from'./task/css.js';
+import js from'./task/js.js';
+import img from'./task/img.js';
+import font from'./task/font.js';
 
 /* Server */
 const server = () => {
@@ -34,23 +33,22 @@ const watcher = () => {
 
 const build = gulp.series(
     clear,
-    gulp.parallel(html, css, img, font, js);
+    gulp.parallel(html, css, img, font, js)
 )
 
 const dev = gulp.series(
     build,
-    gulp.parallel(watcher, server);
+    gulp.parallel(watcher, server)
 )
 
 /* Assembling */
 
-exports.html = html;
-exports.clear = clear;
-exports.watcher = watcher;
-exports.css = css;
-exports.js = js;
-exports.img = img;
-exports.font = font;
+export {html};
+export {clear};
+export {watcher};
+export {css};
+export {js};
+export {img};
+export {font};
 
-exports.dev = dev;
-exports.build = build;
+export default dev

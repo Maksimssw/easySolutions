@@ -1,18 +1,18 @@
-const gulp = require("gulp");
+import gulp from "gulp";
 
 /* Configuration */
-const path = require("../config/path.js");
-const app = require("../config/app.js");
+import path from "../config/path.js";
+import app from "../config/app.js";
 
 
 /* Plugins */
-const plumber = require("gulp-plumber")
-const newer = require("gulp-newer")
-const fonter = require("gulp-fonter")
-const ttf2woff2 = require("gulp-ttf2woff2")
+import plumber from "gulp-plumber"
+import newer from "gulp-newer"
+import fonter from "gulp-fonter"
+import ttf2woff2 from "gulp-ttf2woff2"
 
 /* Processing Fonts */
-const font = () => {
+export default () => {
     return gulp.src(path.font.src)
         .pipe(plumber(app.plumberFont))
         .pipe(newer(path.font.dest))
@@ -21,5 +21,3 @@ const font = () => {
         .pipe(ttf2woff2())
         .pipe(gulp.dest(path.font.dest));
 }
-
-module.exports = font;
