@@ -19,5 +19,15 @@ module.exports = {
             title: "JS",
             message: error.message
         })) 
+    },
+    plumberIMG: {
+        errorHandler: notify.onError(error => ({
+            title: "Images",
+            message: error.message
+        })) 
+    },
+
+    imagemin: {
+        verbose: true
     }
 }

@@ -7,7 +7,6 @@ module.exports = {
 
     html: {
         src: pathSrc + "/**/*.html",
-        watch: pathSrc +  "/**/*.html",
         dest: pathDest
     },
 
@@ -19,7 +18,11 @@ module.exports = {
 
     js: {
         src: pathSrc + "/static/js/**/*.js",
-        watch: pathSrc +  "/static/js/**/*.js",
         dest: pathDest + "/static/js"
+    },
+
+    img: {
+        src: pathSrc + "/static/img/**/*.*",
+        dest: pathDest + "/static/img"
     }
 }
