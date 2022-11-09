@@ -24,5 +24,10 @@ module.exports = {
     img: {
         src: pathSrc + "/static/img/**/*.*",
         dest: pathDest + "/static/img"
+    },
+
+    font: {
+        src: pathSrc + "/static/fonts/**/*.{eot,ttf,otf,otc,woff,woff2,svg}",
+        dest: pathDest + "/static/fonts"
     }
 }

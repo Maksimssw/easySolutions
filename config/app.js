@@ -26,8 +26,18 @@ module.exports = {
             message: error.message
         })) 
     },
+    plumberFont: {
+        errorHandler: notify.onError(error => ({
+            title: "Font",
+            message: error.message
+        })) 
+    },
 
     imagemin: {
         verbose: true
+    },
+    
+    fonter: {
+        format: ["ttf", "woff", "eot", "svg"]
     }
 }
