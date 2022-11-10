@@ -2,7 +2,7 @@ import gulp from"gulp";
 import browserSync from"browser-sync";
 
 /* Configuration */
-import path from"./config/path.js";
+import path from"./сonfig/path.js";
 
 /* Tasks */
 import clear from'./task/clear.js';

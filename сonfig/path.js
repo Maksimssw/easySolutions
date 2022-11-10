@@ -6,7 +6,7 @@ export default {
     src: pathSrc,
 
     html: {
-        src: pathSrc + "/**/*.html",
+        src: pathSrc + "/pages/*.html",
         dest: pathDest
     },
 

@@ -1,0 +1,168 @@
+/* Basic Styles */
+
+:root{
+    --main: #fff;
+    --dark: #323232;
+    --grey: #999999;
+    --blue: #4985FF;
+    --greyBor: #E0E0E0;
+    --black: #000;
+  }
+  
+.container{
+    padding: 0 calc(50% - 555px);
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+img,a,button{
+    display: block;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Text Modifier Blocks */
+
+.text{
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.text-link{
+    text-decoration: underline;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.text_main{
+    color: var(--main);
+    font-weight: 500;
+    line-height: 19.5px;
+}
+
+/* Title blocks and modifiers */
+
+.title{
+    color: var(--main);
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64.36px;
+}
+
+.title_section{
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52.66px;
+}
+
+.title_heading{
+    color: var(--black);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+}
+
+/* Buttons */
+
+.button{
+    background: var(--blue);
+    width: 200px;
+    height: 45px;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    border: none;
+
+    color: var(--main);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all ease-in-out;
+}
+
+.button:hover, .button:focus, .button:active{
+    transform: translateY(-5px);
+    background: #3f74e0;
+}
+
+.button_video{
+    width: 60px;
+    height: 60px;
+    background: url('../img/video/play.svg') no-repeat center;
+    position: relative;
+}
+
+.button_video:hover, .button_video:focus, .button_video:active{
+    background: url('../img/video/play.svg') no-repeat center;
+}
+/* Fonts */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+         url('../fonts/Montserrat-Regular_2.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+         url('../fonts/Montserrat-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+         url('../fonts/Montserrat-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('../fonts/Montserrat-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+         url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+}

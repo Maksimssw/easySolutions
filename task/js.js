@@ -1,8 +1,8 @@
 import gulp from "gulp";
 
 /* Configuration */
-import path from "../config/path.js";
-import app from "../config/app.js";
+import path from "../сonfig/path.js";
+import app from "../сonfig/app.js";
 
 
 /* Plugins */
