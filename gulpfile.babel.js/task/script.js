@@ -12,9 +12,9 @@ import webpack from "webpack-stream"
 
 /* Processing JavaScript */
 export default () => {
-    return gulp.src(path.js.src)
+    return gulp.src(path.script.src)
         .pipe(plumber(app.plumberJS))
         .pipe(babel())
         .pipe(webpack({mode: "development"}))
-        .pipe(gulp.dest(path.js.dest));
+        .pipe(gulp.dest(path.script.dest));
 }

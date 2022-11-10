@@ -7,9 +7,9 @@ import path from"./сonfig/path.js";
 /* Tasks */
 import clear from'./task/clear.js';
 import html from'./task/html.js';
-import css from'./task/css.js';
-import js from'./task/js.js';
-import img from'./task/img.js';
+import styles from'./task/styles.js';
+import js from'./task/script';
+import img from'./task/images.js';
 import font from'./task/font.js';
 
 /* Server */
@@ -24,8 +24,8 @@ const server = () => {
 /* Observation */
 const watcher = () => {
     gulp.watch(path.html.src, html).on("all", browserSync.reload);
-    gulp.watch(path.css.watch, css).on("all", browserSync.reload);
-    gulp.watch(path.js.src, js).on("all", browserSync.reload);
+    gulp.watch(path.styles.watch, styles).on("all", browserSync.reload);
+    gulp.watch(path.script.src, js).on("all", browserSync.reload);
     gulp.watch(path.images.src, img).on("all", browserSync.reload);
     gulp.watch(path.font.src, font).on("all", browserSync.reload);
 }
@@ -33,7 +33,7 @@ const watcher = () => {
 
 const build = gulp.series(
     clear,
-    gulp.parallel(html, css, img, font, js)
+    gulp.parallel(html, styles, img, font, js)
 )
 
 const dev = gulp.series(
@@ -46,7 +46,7 @@ const dev = gulp.series(
 export {html};
 export {clear};
 export {watcher};
-export {css};
+export {styles};
 export {js};
 export {img};
 export {font};

@@ -10,15 +10,15 @@ export default {
         dest: pathDest
     },
 
-    css: {
-        src: pathSrc + "/static/css/*.css",
-        watch: pathSrc +  "/static/css/**/*.css",
-        dest: pathDest + "/static/css"
+    styles: {
+        src: pathSrc + "/static/styles/*.css",
+        watch: pathSrc +  "/static/styles/**/*.css",
+        dest: pathDest + "/static/styles"
     },
 
-    js: {
-        src: pathSrc + "/static/js/**/*.js",
-        dest: pathDest + "/static/js"
+    script: {
+        src: pathSrc + "/static/script/**/*.js",
+        dest: pathDest + "/static/script"
     },
 
     images: {
