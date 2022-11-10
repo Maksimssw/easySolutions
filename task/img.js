@@ -13,13 +13,13 @@ import webp from "gulp-webp"
 
 /* Processing Images */
 export default () => {
-    return gulp.src(path.img.src)
+    return gulp.src(path.images.src)
         .pipe(plumber(app.plumberIMG))
-        .pipe(newer(path.img.dest))
+        .pipe(newer(path.images.dest))
         .pipe(webp())
-        .pipe(gulp.dest(path.img.dest))
-        .pipe(gulp.src(path.img.src))
-        .pipe(newer(path.img.dest))
+        .pipe(gulp.dest(path.images.dest))
+        .pipe(gulp.src(path.images.src))
+        .pipe(newer(path.images.dest))
         .pipe(imagemin(app.imagemin))
-        .pipe(gulp.dest(path.img.dest));
+        .pipe(gulp.dest(path.images.dest));
 }

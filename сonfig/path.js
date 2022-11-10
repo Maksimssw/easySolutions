@@ -21,9 +21,9 @@ export default {
         dest: pathDest + "/static/js"
     },
 
-    img: {
-        src: pathSrc + "/static/img/**/*.*",
-        dest: pathDest + "/static/img"
+    images: {
+        src: pathSrc + "/static/images/**/*.*",
+        dest: pathDest + "/static/images"
     },
 
     font: {

@@ -26,7 +26,7 @@ const watcher = () => {
     gulp.watch(path.html.src, html).on("all", browserSync.reload);
     gulp.watch(path.css.watch, css).on("all", browserSync.reload);
     gulp.watch(path.js.src, js).on("all", browserSync.reload);
-    gulp.watch(path.img.src, img).on("all", browserSync.reload);
+    gulp.watch(path.images.src, img).on("all", browserSync.reload);
     gulp.watch(path.font.src, font).on("all", browserSync.reload);
 }
 
