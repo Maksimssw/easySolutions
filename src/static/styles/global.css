@@ -119,6 +119,25 @@ body{
 .button_video:hover, .button_video:focus, .button_video:active{
     background: url('../images/video/play.svg') no-repeat center;
 }
+
+.button_signature{
+    width: 190px;
+    height: 45px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: start;
+    padding-left: 36px;
+    background: #4985FF;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 0px 30px 30px 0px;
+}
+
+.button_signature:hover, .button_signature:focus, .button_signature:active{
+    transform: translateY(0);
+    background: #4378e2;
+}
+
 /* Fonts */
 
 @font-face {
