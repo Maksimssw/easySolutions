@@ -592,3 +592,32 @@
   color: var(--main);
   font-weight: 500;
 }
+@supports (-webkit-appearance:none){
+.projects__number::before{background:url('../images/standard/web-programming.svg') no-repeat center}
+.video::after{background:url('../images/video/background.webp') no-repeat center/ cover}
+.video__block{background:url('../images/video/video.webp') no-repeat center}
+}
+
+ @media screen and(max-width: 1130px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and(max-width: 768px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and(max-width: 425px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}

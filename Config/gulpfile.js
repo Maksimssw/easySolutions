@@ -1,5 +1,5 @@
-import gulp from"gulp";
-import browserSync from"browser-sync";
+import gulp from "gulp";
+import browserSync from "browser-sync";
 
 /* Configuration */
 import path from"./сonfig/path.js";
@@ -8,7 +8,7 @@ import path from"./сonfig/path.js";
 import clear from'./task/clear.js';
 import html from'./task/html.js';
 import styles from'./task/styles.js';
-import js from'./task/script';
+import js from'./task/script.js';
 import img from'./task/images.js';
 import font from'./task/font.js';
 
@@ -29,7 +29,6 @@ const watcher = () => {
     gulp.watch(path.images.src, img).on("all", browserSync.reload);
     gulp.watch(path.font.src, font).on("all", browserSync.reload);
 }
-
 
 const build = gulp.series(
     clear,

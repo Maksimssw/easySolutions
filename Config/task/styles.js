@@ -9,7 +9,7 @@ import path from "../сonfig/path.js";
 import app from "../сonfig/app.js";
 
 /* CSS Processing */
-export default  () => {
+export default () => {
     return gulp.src(path.styles.src)
         .pipe(plumber(app.plumberCss))
         .pipe(webpCss())

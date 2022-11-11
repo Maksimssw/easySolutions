@@ -1,4 +1,4 @@
-const pathSrc = "./src"; 
+const pathSrc = "../src"; 
 const pathDest = "./dist";
 
 export default {
