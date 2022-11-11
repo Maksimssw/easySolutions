@@ -43,7 +43,6 @@ const dev = gulp.series(
 /* Assembling */
 
 export {html};
-export {clear};
 export {watcher};
 export {styles};
 export {js};
